@@ -91,9 +91,6 @@ function App() {
 	  return acc;
   }, {}));
   
-  const addToTotalPrice = (price) => {
-	  setTotalPrice(prevTotal => prevTotal + price);
-  };
   
   const updateItemCount = (id, operation) => {
 	  const newItemCounts = { ...itemCounts};
@@ -159,7 +156,7 @@ function App() {
 	  	  <p className="mb-0">Subtotal: ${totalPrice.toFixed(2)}</p>
 		  <div>
 		    <button onClick={placeOrder} className="me-2">Order</button>
-		    <button onClick={clearOrder} className="">Clear Order</button>
+		    <button onClick={clearOrder} className="">Clear All</button>
 		  </div>
 	    </div>
 	  </main>
